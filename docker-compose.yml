@@ -1,0 +1,9 @@
+luneos:
+  build: luneos
+  environment:
+    - MACHINE=tenderloin
+  volumes:
+    - tmp-glibc:/home/luneos/luneos-build/webos-ports-env/webos-ports/tmp-glibc
+    - sstate-cache:/home/luneos/luneos-build/webos-ports-env/webos-ports/sstate-cache
+  stdin_open: true
+  tty: true
