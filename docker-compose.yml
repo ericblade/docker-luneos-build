@@ -8,9 +8,11 @@ services:
     volumes:
       - tmp-glibc:/home/luneos/luneos-build/webos-ports-env/webos-ports/tmp-glibc
       - sstate-cache:/home/luneos/luneos-build/webos-ports-env/webos-ports/sstate-cache
+      - downloads:/home/luneos/luneos-build/webos-ports-env/downloads
     stdin_open: true
     tty: true
 
 #volumes:
 #  tmp-glibc:
 #  sstate-cache:
+#  downloads:

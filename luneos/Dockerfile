@@ -4,6 +4,7 @@ RUN apt-get update
 RUN apt-get install -y gawk wget git-core diffstat unzip texinfo build-essential chrpath libsdl1.2-dev xterm nodejs curl
 RUN apt-get install -y cpio
 RUN apt-get install -y bzr
+RUN apt-get install -y vim-common # for xxd for node-js-modules
 RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
 RUN groupadd -r luneos && useradd --no-log-init -r -g luneos luneos
 WORKDIR /home/luneos/luneos-build/webos-ports-env
