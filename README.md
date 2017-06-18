@@ -56,6 +56,11 @@ machine.
 If you're using one of the supported MACHINEs, you should be able to find directions to install
 the image onto your device here: http://webos-ports.org/index.php?search=install+luneos&title=Special%3ASearch&go=Go
 
+For example, the following will get you a copy of the qemux86 build image in your local filesystem:
+````
+docker cp -L dockerluneosbuild_luneos_1:/home/luneos/luneos-build/webos-ports-env/webos-ports/tmp-glibc/deploy/images/qemux86/luneos-dev-image-qemux86.tar.gz .
+````
+
 # TODO
 
 Figure out how to get the volumes to work in such a way that doesn't require chowning? not sure if that's possible.  Figure out if it's possible to put the Windows volumes also in the normal Windows filesystems, instead of wherever it is that Docker for Windows stores named volumes currently.
